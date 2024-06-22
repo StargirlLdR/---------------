@@ -1,0 +1,475 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav-images{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.nav-images img{
+    height: 350px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 10px;
+}
+
+html,
+body{
+    font-family: Arial, sans-serif;
+    height: 100%;
+    width: 100%;
+}
+
+
+.body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+.header{
+    height: 100vh;
+    position: relative;
+    display: flex;
+    
+}
+
+.cover{
+    height: 749px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    right: 0;
+    object-fit: cover;
+    object-position: top;
+    z-index: -3;
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px;
+    background-color: #f9f9f9;
+    width: 40%;
+    height: 20%;
+    overflow: hidden;
+}
+.nav-closed{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 150px;
+    width: 40%;
+    background-color: #f9f9f9;
+    /*position: absolute;*/
+}
+
+.nav-closed ul{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    list-style: none;
+}
+.nav-open{
+    position: absolute;
+    width: 40%;
+    height: 80%;
+    top: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    background-color: #f9f9f9;
+}
+
+.exhibition{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+
+.exhibition h2{
+    font-size: 50px;
+    color: rgba(255, 0, 0, 1);
+}
+
+
+.exhibition ul {
+   list-style: none;
+}
+.exhibition ul li{
+    padding-bottom: 10px;
+}
+.exhibition ul li a{
+    text-decoration: none;
+}
+
+
+
+
+.grid{
+    margin-top: 50px;
+    /*background-color: aqua;*/
+    position: relative;
+    height: 840px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    max-width: 1353px;
+}
+.Grid{
+    margin-top: 800px;
+}
+
+.image1 {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    margin-top: 90px;
+}
+.pic1{
+    height: 600px;
+    width: 475px;
+}
+
+.text {
+    align-items: center;
+    justify-content: center;
+    text-align: right;
+    font-size: 24px;
+    margin-top: 90px;
+}
+
+.pic2{
+    height: 370px;
+    width: 650px;
+}
+
+.grid2{
+    margin-top: 90px;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: end;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 0;
+  border: 0;
+  background-color: #b72929;
+}
+
+body::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 10px;
+  height: 5px;
+  background-color: rgba(23, 25, 23, 0.3);
+}
+.btn {
+    display: none;
+    position: absolute;
+    top: 87.6%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: rgba(76, 206, 215, 1);
+    color: rgb(255, 0, 0);
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    height: 12%;
+    font-size: 25px;
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-container:hover .btn {
+    display: block;
+}
+
+.boop_2 {
+    position: relative;
+}
+
+.Voon
+{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 80px;
+}
+
+.voon
+{
+  width: 1200px;
+  display: flex;
+  text-align: start;
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+.f{
+    color: rgba(255, 0, 0, 1);
+}
+.voon_1
+{
+    width: 100%;
+    height: 1px;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around
+}
+
+.Boop
+{
+    margin-top: 100px;
+    position: relative;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Boop1
+{
+    margin-top: 140px;
+    position: relative;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.boop
+{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* определите количество и ширину колонок сетки */
+  grid-template-rows: repeat(1, 1fr); /* определите количество и высоту строк сетки */
+  gap: 40px; /* определите промежуток между ячейками сетки */
+  /*background-color: rgba(0, 0, 0, 0.5);  установите цвет фона сетки */
+  justify-items: center;
+  align-items: end;
+  margin-bottom: 30px;
+}
+.cate-hover
+{
+  animation: smaller 0.5s forwards;
+}
+
+.pic
+{
+  width: 390px;
+  height: 500px;
+  margin-bottom: 30px;
+  animation: smaller 0.5s forwards;
+}
+.pic4{
+    height: 370px;
+    width: 570px;
+}
+.pic5
+{
+    height: 370px;
+    width: 570px;
+    margin-top: 40px;
+}
+.grid1{
+    /*background-color: aqua;*/
+    position: relative;
+    height: 830px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1313px;
+    align-content: space-around;
+}
+.grid3{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    
+}
+.text1{
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    font-size: 23px;
+    margin-top: 90px;
+    margin-left: 30px;
+}
+.text3{
+    align-items: right;
+    text-align: right;
+    font-size: 23px;
+    margin-top: 50px;
+}
+.Grid1{
+    margin-left: 50px;
+}
+
+
+.Boop2
+{
+    margin-top: 140px;
+    position: relative;
+    width: 100%;
+    height: 400px;
+    width: 1350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.boop1{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* определите количество и ширину колонок сетки */
+    grid-template-rows: repeat(1, 1fr); /* определите количество и высоту строк сетки */
+  /* определите промежуток между ячейками сетки */
+    /*background-color: rgba(0, 0, 0, 0.5);  установите цвет фона сетки */
+    justify-items: center;
+    align-items: end;
+    margin-bottom: 30px;
+  }
+.boop_2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10px;
+}
+.img3{
+    height:  40px;
+    width: 40px;
+}
+.text4{
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    font-size: 23px;
+    margin-left: 30px;
+}
+.Bboop{
+    margin-left: 50px;
+}
+.Boop3
+{
+    margin-top: 140px;
+    position: relative;
+    width: 100%;
+    height: 700px;
+    width: 1350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    
+}
+.boop_3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.boop_4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10px;
+}
+.voon_1{
+    width: 100%;
+    height: 1px;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around
+}
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.footer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 80px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ccc;
+}
+.footer div{
+    padding: 10px;
+}
+
+.footer h3{
+    margin-bottom: 10px;
+}
+.footer ul{
+    list-style: none;
+    padding: 0;
+}
+.footer li{
+    margin-bottom: 5px;
+}
+.a{
+    border-color: #000;
+}
+.subscribe{
+    display: grid;
+    gap: 10px; /* Отступы между полями формы */
+    width: 300px; /* Ширина формы */
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 60px;
+}
+.subscribe input {
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+}
+.subscribe button{
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #fff;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+.subscribe button:hover {
+    background-color: #555; /* Цвет кнопки при наведении */
+  }
+.img2{
+    margin-top: 25px;
+    margin-left: 0px;
+}
+.img1{
+     height: 130px; 
+     margin-left: 300px;
+     margin-bottom: 10px;
+}
+
+
+@keyframes header{
+    0% {transform: translateY(-150%);}
+    100% {transform: translateY(0);}
+}
+  
+  
+@keyframes header{
+    0% {transform: translateY(-150%);}
+    100% {transform: translateY(0);}
+}
